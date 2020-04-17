@@ -1,0 +1,27 @@
+
+body {
+  background-color: rgb(245, 111, 70);
+}
+li {
+    padding: 5px;
+    margin: 5px;
+    background: #faebd7;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .create-update-form {
+    padding: 5px;
+    margin: 5px;
+    background: aqua;
+  }
+  
+  .form-group {
+    margin-bottom: 5px;
+  }
+  .image-formatter {
+    width: 210px;
+    margin: 10px;
+  }
