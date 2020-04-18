@@ -51,7 +51,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: center;
-  background-color: red;
+  background-color:white;
 }
 
 [tabindex="-1"]:focus {
@@ -370,7 +370,7 @@ html {
 body {
   font-size: 16px;
   color: #212529;
-  background-color:rgb(255, 24, 24);
+  background-color:whitesmoke;
   -webkit-font-smoothing: antialiased;
 }
 
