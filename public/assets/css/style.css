@@ -1540,7 +1540,6 @@ input[type="checkbox"] {
     well as hiding the derelict pixels in the bottom right and bottom left of
     the last row of a table
   \  ***************************************************************************/
-}
 
 .nes-table tr {
   margin-left: -0.25em;
