@@ -1,10 +1,11 @@
+
+<ul class="nes-list is-disc">
 <li>
 	{{name}}
 	<button class="change-devour" data-id="{{id}}" data-newdevour="{{isDevoured}}">
 		{{#if isDevoured}}Devour It!
-		{{else}}Devoured!
+		{{else}}not devour!</button>
+		<button class="delete-burger" data-id="{{id}}">DELETE</button>
 		{{/if}}
-	</button>
-		<button class="delete-burger" data-id="{{this.id}}">DELETE</button>
-
 </li>
+</ul>
