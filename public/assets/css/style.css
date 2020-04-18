@@ -74,7 +74,7 @@ h6 {
   font-family: 'PressStart2PRegular';
   margin-top: 0;
   margin-bottom: 0.5rem;
-  text-shadow: 2px 2px rgb(179, 171, 171);
+  text-shadow: 2px 2px #26e797;
 }
 
 p {
@@ -105,11 +105,11 @@ dl {
   margin-bottom: 1rem;
 }
 li{
-  padding: 5px;
   align-content: left;
-  text-align-last:right;
   margin-bottom:5px;
-  font-size:12px;
+  font-size:10px;
+  padding:1px;
+  
 }
 ol ol,
 ul ul,
@@ -1328,9 +1328,10 @@ input[type="checkbox"] {
 }
 
 .nes-list {
-  list-style-type: none;
+  list-style-type:none;
+  border:3px solid yellow;
+  border-radius:25px;
 }
-
 .nes-list li {
   position: relative;
 }
