@@ -2,10 +2,17 @@
 body {
   background-color: rgb(245, 111, 70);
 }
+
+table{
+  margin-left:15%;
+  margin-right:15%;
+
+}
 li {
     padding: 5px;
     margin: 5px;
-    background: #faebd7;
+    background: #1a0bf1;
+    
   }
   
   .label {
@@ -21,7 +28,13 @@ li {
   .form-group {
     margin-bottom: 5px;
   }
+
+form{
+display: block;
+ text-align: center;
+ }
+  
   .image-formatter {
-    width: 210px;
+    width: 400px;
     margin: 10px;
   }
