@@ -24,12 +24,11 @@ $(function() {
     $(".create-form").on("submit", function(event) {
         // Make sure to preventDefault on a submit event.
         event.preventDefault();
-    
+  
         var newBurger = {
           burger_name: $("#bur").val().trim(),
           isDevoured: $("[name=isDevoured]:checked").val().trim()
         };
-        console.log(newBurger);
         // Send the POST request.
         $.ajax("/api/burgers", {
           type: "POST",
@@ -50,7 +49,7 @@ $(function() {
           $.ajax("/api/burgers/" + id, {
             type: "DELETE"
           }).then(function () {
-            console.log("deleted cat",id);
+            console.log("deleted burger",id);
             // Reload the page to get the updated list
             location.reload();
           });
