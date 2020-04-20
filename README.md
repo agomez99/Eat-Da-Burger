@@ -1,6 +1,6 @@
 # Eat-Da-Burger
 
-A burger logger with MySQL, Node, Express, Handlebars and a homemade ORM.
+:hamburger:A burger logger with MySQL, Node, Express, Handlebars and a homemade ORM.
 
 
 https://powerful-falls-86472.herokuapp.com/
