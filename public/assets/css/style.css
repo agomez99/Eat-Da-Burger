@@ -102,30 +102,23 @@ address {
 }
 
 ol,
-ul,
+ul
+{
+  padding-inline-start: 0px;
+
+}
 dl {
   margin-top: 0;
   margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right:auto;
 }
 li{
   align-content: left;
   margin-bottom:5px;
-  font-size:10px;
+  font-size:14px;
   padding:4px;
-  
-}
-
-
-.swing li {
-  opacity: 0;
-  transform: rotateX(-90deg);
-  transition: all 0.5s cubic-bezier(.36,-0.64,.34,1.76);
-}
-
-.swing li.show {
-  opacity: 1;
-  transform: none;
-  transition: all 0.5s cubic-bezier(.36,-0.64,.34,1.76);
+  max-width: 100%;
 }
 
 
@@ -133,8 +126,9 @@ ol ol,
 ul ul,
 ol ul,
 ul ol {
-  margin-bottom: 0;
+margin-bottom: 0;
 background-color: #26e797;
+padding:0;
 }
 
 dt {
@@ -221,7 +215,6 @@ figure {
 }
 
 img {
-  vertical-align: middle;
   border-style: none;
 }
 
@@ -1351,7 +1344,6 @@ input[type="checkbox"] {
   border-radius:25px;
 }
 .nes-list li {
-  position: relative;
 }
 
 .nes-list.is-disc li::before {
@@ -1374,8 +1366,6 @@ input[type="checkbox"] {
 .nes-list.is-circle li::before {
   position: absolute;
   top: calc(50% - 8px);
-  left: -22px;
-  content: "";
   width: 2px;
   height: 2px;
   color: #212529;
@@ -2906,13 +2896,12 @@ input[type="checkbox"] {
 
   
 .image-formatter {
-  width: 300px;
+  width: 230px;
 
 }
 
 table{
-margin-right:5%;
-margin-left:5%;
+
 margin-top: 5%;
 }
 

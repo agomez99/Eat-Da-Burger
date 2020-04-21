@@ -1,17 +1,17 @@
 <h1 align="center" >Eat-Da-Burger! </h1>
-<table class=".nes-table-responsive">
+<table class=".nes-table" style="margin-left:auto; margin-right:auto">
   <tr>
     <td>
-      <h2 align="center">Burgers not devoured!</h2>
+      <h2 align="center">Not devoured!</h2>
     </td>
     <td></td>
     <td>
-      <h2 align="center">Burgers devoured!</h2>
+      <h2 align="center">Devoured!</h2>
     </td>
   </tr>
   <tr>
     <td>
-      <ul>
+      <ul >
         {{#each burgers}}
           {{#unless isDevoured}}
             {{> burgers/burger-block isDevoured=true}}
@@ -20,8 +20,9 @@
       </ul>
     </td>
    <td>
-      <img src="/assets/images/burger4.png" alt="Image of a yummy burger" class="image-formatter">
+      <img src="/assets/images/burger4.png" style="margin-left: auto;margin-right:auto"alt="burger" class="image-formatter">
     </td>
+    
     <td>
       <ul>
         {{#each burgers}}
@@ -33,15 +34,15 @@
     </td>
   </tr>
 </table>
-<h2 align="center">Add a Burger</h2>
-<form class="create-form">
-  <div class="form-group">
+<h2 >Add a Burger</h2>
+<form class="create-form"style="margin-left: auto;margin-right:auto">
+  <div class="form-group" >
     <label for="bur">Burger Name:</label>
     <input type="text" maxlength ="20"id="bur"  placeholder="burger name"  pattern="^[a-zA-Z]+(\s[a-zA-Z]+)?$" class="nes-input is-success" name="burger_name">
   </div>
-  <div class="form-group">
+  <div class="form-group"style="margin-left: auto;margin-right:auto">
     <input type="radio" name="isDevoured" value="1" checked>Devour!<br>
     <input type="radio" name="isDevoured" value="0"> Not Devoured<br>
   </div>
-        <button class="nes-btn"type="submit"id="sub">Add </button>
+        <button class="nes-btn"type="submit"id="sub"style="margin-left: auto;margin-right:auto">Add </button>
 </form>
