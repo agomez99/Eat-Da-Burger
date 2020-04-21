@@ -2,7 +2,7 @@ var express = require("express");
 var router = express.Router();
 var burger = require("../models/burger.js");
 
-router.selectAll("/", function (req, res) {
+router.get("/", function (req, res) {
   burger.selectAll(function (data) {
     var hbsObject = {
       burgers: data,
@@ -12,7 +12,7 @@ router.selectAll("/", function (req, res) {
   });
 });
 
-router.insertOne("/api/burgers", function (req, res) {
+router.put("/api/burgers", function (req, res) {
   burger.insertOne(
     ["name", "isDevoured"],
     [req.body.burger_name, req.body.isDevoured],
@@ -23,7 +23,7 @@ router.insertOne("/api/burgers", function (req, res) {
     }
   );
 });
-router.updateOne("/api/burgers/:id", function (req, res) {
+router.put("/api/burgers/:id", function (req, res) {
   let condition = "id = " + req.params.id;
   console.log("condition", condition);
   burger.updateOne({
@@ -38,7 +38,7 @@ router.updateOne("/api/burgers/:id", function (req, res) {
       res.status(200).end();
     }
   );
-  router.deleteone("/api/burgers/:id", function (req, res) {
+  router.delete("/api/burgers/:id", function (req, res) {
     var condition = "id = " + req.params.id;
     burger.deleteOne(condition, function (result) {
       if (result.changedRowsRows == 0) {
