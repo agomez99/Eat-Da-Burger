@@ -7,12 +7,12 @@ router.get("/", function (req, res) {
     var hbsObject = {
       burgers: data,
     };
-    console.log("router /", hbsObject);
+    //console.log("router /", hbsObject);
     res.render("index", hbsObject);
   });
 });
 
-router.put("/api/burgers", function (req, res) {
+router.post("/api/burgers", function (req, res) {
   burger.insertOne(
     ["name", "isDevoured"],
     [req.body.burger_name, req.body.isDevoured],
