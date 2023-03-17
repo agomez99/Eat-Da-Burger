@@ -4,11 +4,11 @@ if(process.env.JAWSDB_URL){
 var connection = mysql.createConnection(process.env.JAWSDB_URL)
 }else{
 var connection = mysql.createConnection({
-  host: "localhost",
-  port: 3306,
+  host: "containers-us-west-87.railway.app",
+  port: 7509,
   user: "root",
-  password: "AGdeveloper99@",
-  database: "burgers_db"
+  password: "4HSNPNvVmAw8Ph0DcISo",
+  database: "railway"
 });
 }
 connection.connect(function(err) {
